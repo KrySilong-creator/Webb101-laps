@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+< land="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Hello</title>
+    <style>
+        body {font-family: sans-serif; padding: 2rem;}
+        button { padding: .5rem 1rem; }
+    </style>
+</head>
+<body>
+    <>Hello, Cluade</h1>
+    <button id="go">Click me</button>
+    <p id="output"></p>
+
+    <script>
+        const btn = document.getElementById("go");
+        const out = document.getElementById("out");
+
+        btn.addEventListener("click", () => {
+            out.textContent = "You clicked at " + new Date().toLocaleTimeString();
+        });
+    </script>
+</body>
+</html>
